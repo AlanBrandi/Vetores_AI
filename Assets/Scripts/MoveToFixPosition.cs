@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class MoveToFixPosition : MonoBehaviour
 {
-    //
+    //Variáveis.
     [SerializeField] GameObject goPosition;
     public float speed;
+    //Pega posição atual do player e coloca no goPosition e adiciona velocidade do speed.
     private void Start()
     {
         goPosition = GameObject.FindGameObjectWithTag("Player");
@@ -14,6 +15,7 @@ public class MoveToFixPosition : MonoBehaviour
     }
     private void Update()
     {
+        //caso não tenha posição, pegue do player e va em direção a ele.
         if(goPosition != null)
         {
             goPosition = GameObject.FindGameObjectWithTag("Player");
