@@ -1,6 +1,6 @@
-CameraAndGeoLocation
+Vetores_AI
 Versão: 1.0
-Status do Projeto: ⚠️ Espera
+Status do Projeto: ✔️ Concluído
 
 ### Tópicos:
 
