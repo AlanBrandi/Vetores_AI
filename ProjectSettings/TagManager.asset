@@ -7,14 +7,16 @@ TagManager:
   - Floor
   - Enemy
   - PowerUp
+  - Point
+  - Spawn
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ray
   - Water
   - UI
-  - 
+  - Spawner
   - 
   - 
   - 

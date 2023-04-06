@@ -5,6 +5,7 @@ using UnityEngine;
 public class MouseGame : MonoBehaviour
 {
     [SerializeField] Camera mainCamera;
+    [SerializeField] LayerMask layer;
     Rigidbody rb;
     Vector3 newPosition;
     public float speed;
@@ -24,7 +25,7 @@ public class MouseGame : MonoBehaviour
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
-            if (Physics.Raycast(ray, out hit, 100) && hit.collider.CompareTag("Floor"))
+            if (Physics.Raycast(ray, out hit, 100, layer) && hit.collider.CompareTag("Floor"))
             {
                 newPosition = hit.point;
                 canMove = true;
